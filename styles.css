@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  line-height: 1.5;
+}
+
+header {
+  background: #0f0f1a;
+  text-align: center;
+  padding: 1.2rem;
+  border-bottom: 3px solid #e94560;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+/* Tarjetas */
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tarjeta {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 180px;
+  text-align: center;
+  border: 1px solid #0f3460;
+}
+
+.tarjeta h2 {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  margin-bottom: 0.4rem;
+}
+
+.tarjeta p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4ade80;
+}
+
+/* Tabla */
+section h2 {
+  margin-bottom: 0.8rem;
+  color: #e94560;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #16213e;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #0f3460;
+}
+
+th {
+  background: #0f3460;
+  color: #fff;
+}
+
+/* En riesgo - muy resaltado */
+tr.riesgo {
+  background: #3b1111;
+}
+
+.alerta {
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+/* Estable - neutro */
+.Estable {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+/* Paneles */
+.destacados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.panel {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 250px;
+  border: 1px solid #0f3460;
+}
+
+.panel h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.riesgo-panel {
+  border-left: 5px solid #ff4d6d;
+  background: #2a0a0a;
+}
+
+.riesgo-panel p {
+  color: #ff133e;
+  margin: 0.3rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0f0f1a;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tarjeta, .panel {
+    flex: 1 1 100%;
+  }
+  th, td {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+}
