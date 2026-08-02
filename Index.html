@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto Municipal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Análisis de Presupuesto - Marzo</h1>
+  </header>
+
+  <main>
+
+    <!-- Tarjetas resumen -->
+    <section class="resumen">
+      <div class="tarjeta">
+        <h2>Presupuesto Total</h2>
+        <p>bs 48.000</p>
+      </div>
+      <div class="tarjeta">
+        <h2>Gasto Total</h2>
+        <p>bs 44.000</p>
+      </div>
+      <div class="tarjeta">
+        <h2>Balance General</h2>
+        <p>bs 4.000</p>
+      </div>
+    </section>
+
+    <!-- Tabla -->
+    <section>
+      <h2>Categorías</h2>
+      <table>
+        <tr>
+          <th>Categoría</th>
+          <th>Presupuesto</th>
+          <th>Gasto</th>
+          <th>Porcentaje %</th>
+          <th>Estado</th>
+        </tr>
+        <tr>
+          <td>Salud</td>
+          <td>bs 5.000</td>
+          <td>bs 4.200</td>
+          <td>84%</td>
+          <td class="Estable">Estable</td>
+        </tr>
+        <tr class="riesgo">
+          <td>Educación</td>
+          <td>bs 8.000</td>
+          <td>bs 7.500</td>
+          <td>93.75%</td>
+          <td class="alerta">En riesgo</td>
+        </tr>
+        <tr class="riesgo">
+          <td>Infraestructura</td>
+          <td>bs 12.000</td>
+          <td>bs 11.000</td>
+          <td>91.67%</td>
+          <td class="alerta">En riesgo</td>
+        </tr>
+        <tr class="riesgo">
+          <td>Seguridad</td>
+          <td>bs 6.000</td>
+          <td>bs 5.800</td>
+          <td>96.67%</td>
+          <td class="alerta">En riesgo</td>
+        </tr>
+        <tr>
+          <td>Cultura</td>
+          <td>bs 2.000</td>
+          <td>bs 1.500</td>
+          <td>75%</td>
+          <td class="Estable">Estable</td>
+        </tr>
+        <tr class="riesgo">
+          <td>Deporte</td>
+          <td>bs 15.000</td>
+          <td>bs 14.000</td>
+          <td>93.33%</td>
+          <td class="alerta">En riesgo</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Destacados -->
+    <section class="destacados">
+      <div class="panel">
+        <h2>Mayor gasto</h2>
+        <p>Deporte - bs 14.000</p>
+      </div>
+      <div class="panel riesgo-panel">
+        <h2>En riesgo</h2>
+        <p>Educación 93.75%</p>
+        <p>Infraestructura 91.67%</p>
+        <p>Seguridad 96.67%</p>
+        <p>Deporte 93.33%</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Alerta a partir del 85%</p>
+  </footer>
+
+</body>
+</html>
