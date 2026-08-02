@@ -10,7 +10,7 @@ Muestra de forma visual el análisis del presupuesto municipal.
 - Resalta en rojo las categorías en riesgo (más del 85% de ejecución)
 - Destaca la categoría con mayor gasto
 - Diseño oscuro y responsive
-- 
+  
 ## Archivos
 - `index.html` → estructura y datos
 - `styles.css` → estilos visuales
